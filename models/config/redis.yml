@@ -1,0 +1,8 @@
+redispro:
+  addr: 172.26.213.145:6379
+  password:
+  db: 0
+redisdev:
+  addr: 127.0.0.1:6379
+  password:
+  db: 0

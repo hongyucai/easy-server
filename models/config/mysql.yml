@@ -1,0 +1,24 @@
+mysqlpro:
+  dialect: mysql
+  username: kxjs
+  password: a123456
+  host: rm-8vbn56qm53906l3n2.mysql.zhangbei.rds.aliyuncs.com
+  port: 3306
+  database: kxjs
+  charset: utf8mb4
+  showSql: true
+  logLevel: debug
+  maxOpenConns: 1000 # 最大打开连接数
+  maxIdleConns: 10 # 连接池的空闲数大小
+mysqldev:
+  dialect: mysql
+  username: kxjs
+  password: a123456
+  host: 127.0.0.1
+  port: 3306
+  database: kxjs
+  charset: utf8mb4
+  showSql: true
+  logLevel: debug
+  maxOpenConns: 1000 # 最大打开连接数
+  maxIdleConns: 10 # 连接池的空闲数大小

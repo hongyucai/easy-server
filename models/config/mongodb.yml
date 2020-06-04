@@ -1,0 +1,14 @@
+mongodbpro:
+  uri: mongodb://127.0.0.1:27017
+  username:
+  password:
+  database: test
+  maxOpenConns: 1000 # 最大打开连接数
+  maxIdleConns: 10 # 连接池的空闲数大小
+mongodbdev:
+  uri: mongodb://127.0.0.1:27017
+  username:
+  password:
+  database: test
+  maxOpenConns: 1000 # 最大打开连接数
+  maxIdleConns: 10 # 连接池的空闲数大小

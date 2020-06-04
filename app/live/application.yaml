@@ -1,0 +1,61 @@
+APP_NAME: Liveshop
+APP_ENV: local
+APP_KEY: base64:zzJaZPSFQjLtGEchIQka0Rd5u6O4C+aSSQnRtW1gkTs=
+APP_DEBUG: true
+APP_LOG_LEVEL: debug
+APP_URL: http://localhost
+
+BROADCAST_DRIVER: log
+CACHE_DRIVER: database
+SESSION_DRIVER: file
+QUEUE_DRIVER: sync
+
+DB_READ_HOST1: 127.0.0.1
+DB_READ_PORT1: 3307
+DB_WRITE_HOST1: 127.0.0.1
+DB_WRITE_PORT1: 3306
+DB_READ_db: we7
+DB_WRITE_db: we7
+
+REDIS_HOST: 127.0.0.1
+REDIS_PASSWORD: null
+REDIS_PORT: 6379
+
+REDIS_CLUSTERS_HOST1: 127.0.0.1
+REDIS_CLUSTERS_PORT1: 6371
+REDIS_CLUSTERS_DATABASE1: 0
+
+MAIL_DRIVER: smtp
+MAIL_HOST: smtp.mailtrap.io
+MAIL_PORT: 2525
+MAIL_USERNAME: null
+MAIL_PASSWORD: null
+MAIL_ENCRYPTION: null
+
+PUSHER_APP_ID:
+PUSHER_APP_KEY:
+PUSHER_APP_SECRET:
+
+QINIU_DEFAULT: cdn.images.ranshi.net
+QINIU_HTTPS:
+QINIU_CUSTOM:
+QINIU_ACCESS_KEY: UmGldKkdHo5vLXSAxxnqRyWRASY_r0QLyu3edv0Q
+QINIU_SECRET_KEY: SqhKbcw9VQmb-igRsOY2_6ilJ_JqnQHKW-lVX9Wq
+QINIU_BUCKET: ranshi
+QINIU_NOTIFY_URL:
+QINIU_ACCESS: public
+
+DisablePathCorrection: false
+EnablePathEscape: false
+FireMethodNotAllowed: false
+DisableBodyConsumptionOnUnmarshal: false
+TimeFormat: Mon, 01 Jan 2006 15:04:05 GMT
+Charset: UTF-8
+
+#自定义配置
+Other:
+  Port: 82
+  IgnoreURLs: [/user/login,/user/logout,/api/login,/admin/test,/api/test]
+  JWTTimeout: 7200 #second
+  LogLevel: debug
+  Secret: a123456
