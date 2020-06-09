@@ -77,4 +77,4 @@
             guards.sh
             
 			
-go run p2g.go D:\phpstudy_pro\WWW\kaixinjishi\we7\addons\shimmer_liveshop\app\Modules\Liveapi\Http\Controllers\shop\GoodsController.php
+go run p2g.go D:\phpstudy_pro\WWW\kaixinjishi\we7\addons\shimmer_liveshop\app\Modules\Liveapi\Http\Controllers\live\AnchorController.php
