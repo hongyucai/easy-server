@@ -1,5 +1,7 @@
 package helper
+
 import (
+	"bytes"
 	"crypto/tls"
 	"encoding/json"
 	"errors"
@@ -12,7 +14,6 @@ import (
 	"os"
 	"strings"
 	"sync"
-	"bytes"
 )
 
 var (
@@ -31,6 +32,7 @@ type HttpSend struct {
 }
 
 func NewHttpSend(link string) *HttpSend {
+
 	return &HttpSend{
 		Link:     link,
 		SendType: SENDTYPE_FROM,
@@ -147,7 +149,7 @@ func (h *HttpSend) send(method string) ([]byte, error) {
 	return ioutil.ReadAll(resp.Body)
 }
 
-func PostFile(targetUrl,filename ,name string) ([]byte,error) {
+func PostFile(targetUrl, filename, name string) ([]byte, error) {
 	bodyBuf := &bytes.Buffer{}
 	bodyWriter := multipart.NewWriter(bodyBuf)
 
@@ -186,5 +188,5 @@ func PostFile(targetUrl,filename ,name string) ([]byte,error) {
 	}
 	fmt.Println(resp.Status)
 	fmt.Println(string(resp_body))
-	return resp_body,nil
+	return resp_body, nil
 }
