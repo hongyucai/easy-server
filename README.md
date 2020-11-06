@@ -1,80 +1,80 @@
 
-│  .gitignore
-│  go.mod
-│  go.sum
-│  README.md
-│ 
-├─app                                   项目层
-│  └─live
-│      │  .env
-│      │  
-│      ├─config
-│      ├─http
-│      │  ├─api
-│      │  │      room.go
-│      │  │      
-│      │  ├─controllers
-│      │  │      LiveController.go
-│      │  │      
-│      │  └─mapper
-│      ├─resources
-│      ├─routes
-│      │      http.go
-│      │      
-│      └─storage
-├─auth
-│  └─jwts
-│          jwts.go
-│          middleware.go
-│          
-├─common
-│  ├─helper
-│  │      aes.go
-│  │      encrypt.go
-│  │      http.go
-│  │      http_test.go
-│  │      snowFlake.go
-│  │      sysconf.go
-│  │      times.go
-│  │      util.go
-│  │      
-│  └─libs
-│          jd.go
-│          pdd.go
-│          qiniu.go
-│          robot.go
-│          wechat.go
-│          
-├─gateway
-├─job
-├─models                                数据层
-│  ├─config
-│  │      mongodb.yml
-│  │      mysql.yml
-│  │      redis.yml
-│  │      redisc.yml
-│  │      
-│  ├─loader
-│  │      mongodb.go
-│  │      mysql.go
-│  │      redis.go
-│  │      redisc.go
-│  │      
-│  ├─migrations
-│  └─sources
-│      ├─mongodb
-│      ├─mysql
-│      └─redis
-├─resources
-├─server                        服务层 商品服务、订单服务
-├─test
-└─tool
-    ├─bat
-    │      build64.bat
-    │      
-    └─sh
+|  .gitignore
+|  go.mod
+|  go.sum
+|  README.md
+| 
+鈹溾攢app                                   
+|  鈹斺攢live
+|      |   .env
+|      |   
+|      鈹溾攢config
+|      鈹溾攢http
+|      |   鈹溾攢api
+|      |   |       room.go
+|      |   |       
+|      |   鈹溾攢controllers
+|      |   |       LiveController.go
+|      |   |       
+|      |   鈹斺攢mapper
+|      鈹溾攢resources
+|      鈹溾攢routes
+|      |       http.go
+|      |       
+|      鈹斺攢storage
+鈹溾攢auth
+|  鈹斺攢jwts
+|          jwts.go
+|          middleware.go
+|          
+鈹溾攢common
+|  鈹溾攢helper
+|  |       aes.go
+|  |       encrypt.go
+|  |       http.go
+|  |       http_test.go
+|  |       snowFlake.go
+|  |       sysconf.go
+|  |       times.go
+|  |       util.go
+|  |       
+|  鈹斺攢libs
+|          jd.go
+|          pdd.go
+|          qiniu.go
+|          robot.go
+|          wechat.go
+|          
+鈹溾攢gateway
+鈹溾攢job
+鈹溾攢models                               
+|  鈹溾攢config
+|  |       mongodb.yml
+|  |       mysql.yml
+|  |       redis.yml
+|  |       redisc.yml
+|  |       
+|  鈹溾攢loader
+|  |       mongodb.go
+|  |       mysql.go
+|  |       redis.go
+|  |       redisc.go
+|  |       
+|  鈹溾攢migrations
+|  鈹斺攢sources
+|      鈹溾攢mongodb
+|      鈹溾攢mysql
+|      鈹斺攢redis
+鈹溾攢resources
+鈹溾攢server                        
+鈹溾攢test
+鈹斺攢tool
+    鈹溾攢bat
+    |       build64.bat
+    |       
+    鈹斺攢sh
             build64.sh
             guards.sh
             
 			
-go run p2g.go D:\phpstudy_pro\WWW\kaixinjishi\we7\addons\shimmer_liveshop\app\Modules\Liveapi\Http\Controllers\live\AnchorController.php
+go run p2g.go \AnchorController.php
